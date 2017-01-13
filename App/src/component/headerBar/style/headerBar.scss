@@ -1,0 +1,34 @@
+[component-name~=headerBar] {
+  	.top-header{
+		background: $colorBase;
+		padding:20px 0;
+		font-family : $primary-font;
+
+		ul{
+			li{
+				list-style-type: none;
+			    display: inline-block;
+			    margin-right: 10px;
+
+				a{
+					color: $white;
+				    @font-size(14);
+
+					span{
+						margin-right: 7px;
+					}	
+				}
+			}
+		}
+	}
+	
+	@media screen and (min-width: $breakpoint2){
+		.top-header{
+			ul{
+				li{
+					margin-right:40px;
+				}
+			}
+		}
+	}
+}
