@@ -21,7 +21,7 @@ var Task = {
 				},
 				clean: {
 					dist: ['Dist'],
-					release: ['Dist/assets/css/*.css', '!Dist/assets/css/*.min.css', 'Dist/assets/js/*.js', '!Dist/assets/js/*.min.js',]
+					release: ['assets', 'index.html', 'Dist/assets/css/*.css', '!Dist/assets/css/*.min.css', 'Dist/assets/js/*.js', '!Dist/assets/js/*.min.js',]
 				},
 				inject: {
 					livereload: {

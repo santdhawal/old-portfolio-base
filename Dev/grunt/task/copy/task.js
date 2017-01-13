@@ -22,6 +22,12 @@ var Task = {
 						src: ['**/*'],
 						dest: 'Dist/assets/',
 						cwd: 'App/src/assets/'
+					},
+					dist: {
+						expand: true,
+						src: ['**/*'],
+						dest: '',
+						cwd: 'Dist'
 					}
 				}
 			}
