@@ -21,7 +21,7 @@ var Task = {
     
   register: function()
   {
-    grunt.registerTask('dist', ['clean:dist', 'env:release', 'sass', 'concat:release', 'copy:assets', 'cssmin', 'uglify:release', 'copy:baseHTML', 'preprocess:release', 'bake-and-format', 'injectContent', 'clean:release']);
+    grunt.registerTask('dist', ['clean:dist', 'env:release', 'sass', 'concat:release', 'copy:assets', 'cssmin', 'uglify:release', 'copy:baseHTML', 'preprocess:release', 'bake-and-format', 'injectContent', 'clean:release', 'copy:dist', 'clean:dist']);
 
     grunt.registerTask('release', ['dist']);
   }
