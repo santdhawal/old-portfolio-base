@@ -1,6 +1,6 @@
-# O2: Modules Frontend
+# santdhawal.github.io: Frontend code
 
-This contains the frontend code for the O2 Modules. 
+This contains the frontend code for the santdhawal.github.io. 
 Using build tools it will create a single html page containing all modules. 
 
 ##Prerequisite
@@ -111,5 +111,3 @@ Run the below command
 ```
 grunt release
 ```
-
-This will take the code in `App/` and compiles it into `Dist/`. It will then re-construct the folder structure for easy Drupal integration, along with some pattern replacements. Pattern replacements is done to resolve any issue which may incur due to folder re-sturcturing.
