@@ -1,0 +1,10 @@
+// use rems with px fall back for everything else
+@function convert-to-rem($value, $base-value: $base-font-size) {
+  $value: strip-unit($value) / strip-unit($base-value) * 1rem;
+  @return $value;
+}
+
+@mixin font-size($sizeValue) {
+  font-size: ($sizeValue) + px;
+  font-size: convert-to-rem($sizeValue);
+}

@@ -1,0 +1,15 @@
+<div component-name="header" class="">
+	<div class="top-header">
+		<div class="container">
+			<ul>
+				<!--(bake-start _foreach="item:header.list")-->
+					<li>
+						<a class="" href="{{item.href}}">
+							<span class="glyphicon {{item.iconClass}}" aria-hidden="true"></span>{{item.title}}
+						</a>
+					</li>
+				<!--(bake-end)-->				
+			</ul>
+		</div>
+	</div>
+</div>

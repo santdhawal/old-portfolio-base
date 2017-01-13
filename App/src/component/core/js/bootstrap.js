@@ -3,7 +3,6 @@
     _timer: null,
     init: function () {
       document.addEventListener(CONSTANTS.general.events.DOMContentLoaded, this.onLoad.bind(this));
-      checkIE(Bootstrap);
     },
     onLoad: function () {
       this.checkJQueryLoaded();
@@ -18,12 +17,7 @@
       clearTimeout(this._timer);
       this._timer = null;
       if (window.$) {
-        if(isIE() == '8')
-        {
-          executeIE8Loaded(Bootstrap);
-        }else{
           this.startApp();
-        }
       } else {
         this.startTimer();
       }
