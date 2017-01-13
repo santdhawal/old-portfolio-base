@@ -1,0 +1,21 @@
+{
+	"header": {
+		"list": [
+			{
+				"title": "Resume",
+				"href": "#about",
+				"iconClass": "glyphicon-file"
+			},
+			{
+				"title": "Email me",
+				"href": "#emailme",
+				"iconClass": "glyphicon-envelope"
+			},
+			{
+				"title": "Print CV",
+				"href": "javascript:window.print()",
+				"iconClass": "glyphicon-print"
+			}
+		]
+	}
+}

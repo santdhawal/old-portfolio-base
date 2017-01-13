@@ -1,0 +1,57 @@
+{
+  "name": "O2_Drupal_UI",
+  "version": "1.0.0",
+  "description": "Front end code for Drupal integration",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm install -g grunt-cli@1.2.0 &&  npm install -g semistandard@7.0.5 && npm install -g snazzy@3.0.1",
+    "serve": "node Dev/server/Server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/O2IP/Drupal-O2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "compression": "^1.6.1",
+    "connect-livereload": "^0.5.4",
+    "express": "~4.13.4",
+    "grunt": "^0.4.1",
+    "method-override": "^2.3.5",
+    "net": "^1.0.2",
+    "open": "0.0.5",
+    "semistandard": "^7.0.5",
+    "serve-index": "^1.7.3",
+    "shelljs": "^0.6.0"
+  },
+  "devDependencies": {
+    "connect-inject": "^0.4.0",
+    "grunt-bake": "^1.7.1",
+    "grunt-concurrent": "^2.3.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-jasmine": "^1.0.3",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-env": "^0.4.4",
+    "grunt-inject": "^0.1.1",
+    "grunt-postcss": "^0.8.0",
+    "grunt-preprocess": "^5.1.0",
+    "grunt-prettify": "^0.4.0",
+    "grunt-prompt": "^1.3.3",
+    "grunt-rename": "^0.1.4",
+    "grunt-sass": "^1.1.0",
+    "grunt-sass-lint": "^0.2.0",
+    "grunt-semistandard": "^1.0.6",
+    "grunt-shell": "^1.3.0",
+    "grunt-string-replace": "^1.2.1",
+    "load-grunt-configs": "^1.0.0-RC1",
+    "load-grunt-tasks": "^3.5.0",
+    "object-fit-images": "^2.5.9",
+    "postcss-flexibility": "^1.0.3"
+  }
+}
