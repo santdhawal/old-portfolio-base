@@ -1,0 +1,9 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+@import 'styles/breakpoints';
+@import 'styles/z-layers';
+
+@import 'component/core/style/global';
+@import 'component/core/style/reset';
+@import 'component/core/style/coreLayout';
+@import 'component/core/style/baseModule';
