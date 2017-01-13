@@ -10,19 +10,9 @@ var MainApplication = { // eslint-disable-line
     this.genericInfoComponents = [];
   },
 
-  __objectFitImages: function()
-  {
-    objectFitImages(null, {watchMQ: true});
-  },
-
   init: function()
   {
     this.__setVars(window);
-    this.__objectFitImages();
-    /*
-    this.window.resize = function(){
-      this.__objectFitImages();
-    }*/
   }
 
 };
