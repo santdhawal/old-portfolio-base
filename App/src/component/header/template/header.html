@@ -1,35 +1,34 @@
 <div component-name="header" class="">
 	<div class="header">
 		<div class="container">
-			<div class="col-sm-8 col-md-8 header-left">
-				<div class="col-sm-4 display-image">
-					<img class="img-responsive" src="" alt=" "/>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 header-left">
+					<div class="col-xs-6 col-sm-6 col-md-5 col-lg-5 display-image">
+						<img class="img-responsive" src="{{header.imgSrc}}" alt="{{header.altText}}"/>
+					</div>
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-5 display-content">
+						<h1>{{header.name}}</h1>
+						<p>{{header.tagline}}</p>
+					</div>
 				</div>
-				<div class="col-sm-6 display-content">
-					<h1>{{header.name}}</h1>
-					<p>{{header.tagline}}</p>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 header-right">
+					<ul class="col-xs-3 col-sm-2 col-md-3 col-lg-4 list-left">
+						<!--(bake-start _foreach="item:header.fieldList")-->
+							<li>{{item.field}}:</li>
+						<!--(bake-end)-->
+					</ul>
+					<ul class="col-xs-8 col-sm-8 col-md-8 col-lg-8 list-right">
+						<!--(bake-start _foreach="item:header.fieldList")-->
+							<!--(bake-start _if="item.href")-->
+								<li><a href="{{item.value}}">{{item.value}}</a></li>
+							<!--(bake-end)-->
+							<!--(bake-start _if="!item.href")-->
+								<li>{{item.value}}</li>
+							<!--(bake-end)-->
+						<!--(bake-end)-->
+					</ul>
 				</div>
-				<div class="clearfix"></div>
 			</div>
-			<div class="col-sm-4 col-md-4 header-right">
-				<ul class="col-xs-4 col-sm-4 col-md-4 col-lg-4 list-left">
-					<!--(bake-start _foreach="item:header.fieldList")-->
-						<li>{{item.field}}:</li>
-					<!--(bake-end)-->
-				</ul>
-				<ul class="col-xs-8 col-sm-8 col-md-8 col-lg-8 list-right">
-					<!--(bake-start _foreach="item:header.fieldList")-->
-						<!--(bake-start _if="item.href")-->
-							<li><a href="{{item.value}}">{{item.value}}</a></li>
-						<!--(bake-end)-->
-						<!--(bake-start _if="!item.href")-->
-							<li>{{item.value}}</li>
-						<!--(bake-end)-->
-					<!--(bake-end)-->
-				</ul>
-				<div class="clearfix"></div>
-			</div>
-			<div class="clearfix"></div>
 		</div>
 	</div>
 </div>

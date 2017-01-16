@@ -21,6 +21,8 @@
 	"header": {
 		"name": "Dhawal Sant",
 		"tagline": "Passionate Web Developer",
+		"imgSrc": "/assets/img/Dhawal.jpg",
+		"altText": "Dhawal Sant",
 		"fieldList": [
 			{
 				"field": "Email",
@@ -29,17 +31,12 @@
 			},
 			{
 				"field": "Website",
-				"value": "santdhawal.github.io",
+				"value": "http://santdhawal.github.io",
 				"href": true
 			},
 			{
 				"field": "Mobile",
 				"value": "+91 8007194932",
-				"href": false
-			},
-			{
-				"field": "Address",
-				"value": "17E-483, Chopasni Housing Board, Jodhpur, Rajasthan",
 				"href": false
 			}
 		]
