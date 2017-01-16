@@ -1,3 +1,7 @@
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
 // use rems with px fall back for everything else
 @function convert-to-rem($value, $base-value: $base-font-size) {
   $value: strip-unit($value) / strip-unit($base-value) * 1rem;
@@ -7,4 +11,12 @@
 @mixin font-size($sizeValue) {
   font-size: ($sizeValue) + px;
   font-size: convert-to-rem($sizeValue);
+}
+
+@mixin browser-prefix($property, $value){
+	#{$property}: $value;
+    -webkit-#{$property}: $value;
+    -o-#{$property}: $value;
+    -ms-#{$property}: $value;
+    -moz-#{$property}: $value;
 }

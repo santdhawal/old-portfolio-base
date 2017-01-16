@@ -1,5 +1,5 @@
 {
-	"header": {
+	"headerBar": {
 		"list": [
 			{
 				"title": "Resume",
@@ -15,6 +15,29 @@
 				"title": "Print CV",
 				"href": "javascript:window.print()",
 				"iconClass": "glyphicon-print"
+			}
+		]
+	},
+	"header": {
+		"name": "Dhawal Sant",
+		"tagline": "Passionate Web Developer",
+		"imgSrc": "/assets/img/Dhawal.jpg",
+		"altText": "Dhawal Sant",
+		"fieldList": [
+			{
+				"field": "Email",
+				"value": "dhawalsant@gmail.com",
+				"href": true
+			},
+			{
+				"field": "Website",
+				"value": "http://santdhawal.github.io",
+				"href": true
+			},
+			{
+				"field": "Mobile",
+				"value": "+91 8007194932",
+				"href": false
 			}
 		]
 	}
