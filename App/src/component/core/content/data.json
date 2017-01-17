@@ -3,7 +3,7 @@
 		"list": [
 			{
 				"title": "Resume",
-				"href": "#about",
+				"href": "#aboutme",
 				"iconClass": "glyphicon-file"
 			},
 			{
@@ -40,5 +40,17 @@
 				"href": false
 			}
 		]
-	}
+	},
+	"sections":	[
+		{			
+			"id": "aboutme",
+			"title": "About Me",
+			"description": [
+				"A front-end UI/JavaScript developer having experience in website development, mobile application development (Hybrid application) and Responsive web development (RWD) using HTML5, CSS3, JavaScript, Object Oriented JavaScript (OOJS)."
+			],
+			"specificPartial": {
+				"type": "aboutMe"
+			}
+		}
+	]
 }
