@@ -52,5 +52,38 @@
 				"type": "aboutMe"
 			}
 		}
-	]
+	],
+	"accordion": {
+		"title": "Education",
+		"items": [
+			{
+				"year":"2009-2011",
+				"degree":"M.Tech. in Computer Science",
+				"college": "Indian Institute of Information Technology & Management",
+				"extras": [
+					"CGPA: 8.87",
+					"Placement co-ordinator",
+					"Pusblished paper in IEEE"
+				]
+			},
+			{
+				"year":"2005-2009",
+				"degree":"B.E. in Computer Science & Engg",
+				"college": "Jodhpur Engineering College & Research Center",
+				"extras": [
+					"B.E. in Hons. 76.14%",
+					"University of Rajasthan"
+				]
+			},
+			{
+				"year":"2004-2005",
+				"degree":"Senior Secondary",
+				"college": "St. Anne's School",
+				"extras": [
+					"61.4%",
+					"CBSE"
+				]
+			}
+		]
+	}
 }
