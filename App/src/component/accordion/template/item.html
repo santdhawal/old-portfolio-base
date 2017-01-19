@@ -1,0 +1,20 @@
+<div class="accordion-section">
+	<h5>
+		<a class="accordion-section-title" href="#accordion-{{item@iteration}}">
+			<span>{{item.year}}</span> {{item.degree}}
+			<i class="glyphicon glyphicon-chevron-down"></i>
+			<div class="clearfix"></div>
+		</a>
+	</h5>
+	<div id="accordion-{{item@iteration}}" class="accordion-section-content">
+		<h6>{{item.college}}</h6>
+		<ul>
+			<!--(bake-start _foreach="extra:item.extras")-->
+				<li>
+					<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+					<a href="#">{{extra}}</a>
+				</li>
+			<!--(bake-end)-->
+		</ul>
+	</div>
+</div>

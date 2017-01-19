@@ -1,0 +1,172 @@
+[component-name~=accordion] {
+	padding: 40px 15px;
+	background:$colorGrey7;
+	width:100%;
+	font-family: $primary-font;
+
+	&>h2{
+		@include font-size(23);
+		margin-bottom:25px;
+		color: $colorBase;
+	}
+
+	.accordion {
+		overflow:hidden;
+		background:$colorGrey7;
+	    border: 1px solid $accordionBgColor;
+
+	    .accordion-section{
+	    	h5{
+	    		a{
+	    			&.accordion-section-title{
+		    			width: 100%;
+					    display: inline-block;
+					    border-bottom:1px solid $accordionBgColor;
+					    background: $white;
+					    transition: all linear 0.15s;
+					    @include font-size(13);
+					    color: $colorText;
+					    text-indent: 1em;
+						text-decoration:none;
+					    padding: 15px 0;
+						text-transform:uppercase;
+
+						&:active, &:hover, &:focus{
+							color: $colorText;
+							text-decoration:none;
+						}
+		    			span{
+						    @include font-size(14);
+						    margin: 0 9px 14px 0;
+						    color: #929292;
+		    			}
+		    			i{
+		    				float: right;
+						    margin:4px 20px 0 0;
+						    color: $black;
+						    @include font-size(13);
+		    			}
+		    		}
+	    		}
+	    	}
+
+	    	&:last-child{
+	    		h5{
+	    			a{
+	    				&.accordion-section-title{
+	    					border-bottom: none;
+	    				}
+	    			}
+	    		}
+	    	}
+	    }
+
+	    .accordion-section-content{
+
+	    	padding: 15px 15px;
+		    display: none;
+		    border: none;
+		    border-bottom: 1px solid $accordionBgColor;
+		    background: $white;
+		    text-decoration: none;
+		    text-indent: 2em;
+	    	
+	    	&.open{
+	    		border-top: 1px solid $accordionBgColor;
+	    	}
+
+	    	h6{
+	    		@include font-size(20);
+	    		margin-bottom: 15px;
+	    	}
+
+	    	ul{
+    			li{
+    				list-style-type: none;
+				    line-height: 2em;
+				    @include font-size(14);
+				    color: $colorText;
+
+    				span{
+    					margin-right: 14px;
+					    color: $colorBase;
+					    font-weight: 100;
+    				}
+    				a{
+    					color: $colorText;
+						text-decoration:none;
+    				}
+    			}
+    		}
+	    }
+
+	    p{
+	    	color: $colorText;
+	    	font-size: 14px;
+	    	line-height: 1.8em;
+	    }
+	}
+
+	@media screen and (min-width: $breakpoint2) {
+		min-height:380px;
+		padding: 56px 28px 0;
+		
+		&>h2{
+			@include font-size(32);
+			margin-bottom:45px;
+		}
+
+		.accordion{
+			.accordion-section{
+		    	h5{
+		    		@include font-size(14);
+		    		a{
+		    			&.accordion-section-title{
+		    				padding:22px 0;
+		    				@include font-size(16);
+		    			}
+		    		}
+		    	}
+		    }
+		}
+	}
+
+	@media screen and (min-width: $breakpoint3) {
+		padding: 56px 28px 0;
+		min-height:483px;
+
+		.accordion{
+			.accordion-section{
+		    	h5{
+		    		a{
+		    			&.accordion-section-title{
+		    				padding:22px 0;
+		    				@include font-size(16);
+		    				text-indent: 1em;
+		    			}
+		    		}
+		    	}
+		    }
+		}
+	}
+
+	@media screen and (min-width: $breakpoint4) {
+		padding: 120px 100px 0;
+		min-height:610px;
+
+		.accordion{
+			.accordion-section{
+		    	h5{
+		    		a{
+		    			&.accordion-section-title{
+		    				padding:31px 0;
+		    				@include font-size(20);
+		    				text-indent: 2em;
+		    			}
+		    		}
+		    	}
+		    }
+		}
+	}
+
+}
